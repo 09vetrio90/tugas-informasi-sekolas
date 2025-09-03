@@ -1,55 +1,263 @@
-DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>informasi sekolah tidak tersosialisasi dengan baik</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 1em 0;
-    }
-    main {
-      padding: 2em;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background: #4CAF50;
-      color: white;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #45a049;
-    }
-    footer {
-      margin-top: 2em;
-      background: #222;
-      color: #ccc;
-      padding: 1em 0;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>INFORMASI SEKOLAH TIDAK TERSOSIALISASI</title>
+    <style>
+        :root {
+            --bg: #f6f7fb;
+            --card: #ffffff;
+            --accent: #2563eb;
+            --muted: #6b7280
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: #111;
+            margin: 0;
+            padding: 24px
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 18px
+        }
+
+        .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--accent), #60a5fa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 20px
+        }
+
+        p.lead {
+            margin: 6px 0 18px;
+            color: var(--muted)
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 6px 18px rgba(10, 12, 20, 0.06);
+            text-align: center;
+        }
+
+        button {
+            background: var(--accent);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        /* Style untuk gambar */
+        .poster-image {
+            max-width: 500px;
+            /* Sesuaikan ukuran gambar */
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
-  <main>
-    <p>This is a simple website created with HTML and CSS.</p>
-    <button onclick="alert('Hello! Thanks for clicking!')">Click Me</button>
-  </main>
-  <footer>
-    <p>&copy; 2025 My Website</p>
-  </footer>
+    <header>
+        <div class="logo">IS</div>
+        <div>
+            <h1>INFORMASI SEKOLAH TIDAK TERSOSIALISASI</h1>
+            <p class="lead">Yuk, cari tahu kenapa info sekolah itu penting!</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="poster.png" alt="Poster Informasi Sekolah" class="poster-image">
+            <!-- Ganti "poster.png" dengan nama file gambar Anda -->
+            <h2>Kenapa Ini Penting?</h2>
+            <p>Lihat apa yang terjadi kalau informasi sekolah tidak sampai dengan baik.</p>
+            <a href="halaman2.html" class="button">Pelajari Lebih Lanjut</a>
+        </div>
+    </div>
 </body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Detail Informasi Sekolah</title>
+    <style>
+        :root {
+            --bg: #f6f7fb;
+            --card: #ffffff;
+            --accent: #2563eb;
+            --muted: #6b7280
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: #111;
+            margin: 0;
+            padding: 24px
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 18px
+        }
+
+        .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--accent), #60a5fa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 20px
+        }
+
+        p.lead {
+            margin: 6px 0 18px;
+            color: var(--muted)
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 6px 18px rgba(10, 12, 20, 0.06);
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a.button {
+            background: var(--accent);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">IS</div>
+        <div>
+            <h1>Detail Informasi Sekolah</h1>
+            <p class="lead">Informasi lengkap mengenai pentingnya sosialisasi informasi sekolah.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="card">
+            <section>
+                <h2>APA ITU INFORMASI SEKOLAH</h2>
+                <p>Informasi sekolah adalah semua pengumuman atau berita dari sekolah yang perlu diketahui siswa agar tidak ketinggalan kegiatan dan aturan.</p>
+            </section>
+
+            <section>
+                <h2>APA FUNGSI INFORMASI SEKOLAH</h2>
+                <ul>
+                    <li><strong>Agar tidak ketinggalan kegiatan</strong> → Supaya tahu jadwal ujian, upacara, lomba, atau acara sekolah lainnya.</li>
+                    <li><strong>Membantu mengatur waktu belajar</strong> → Dengan tahu jadwal pelajaran, tugas, dan ulangan, siswa bisa mempersiapkan diri lebih baik.</li>
+                    <li><strong>Sebagai panduan aturan sekolah</strong> → Informasi tentang tata tertib membantu siswa tahu apa yang boleh dan tidak boleh dilakukan.</li>
+                    <li><strong>Memudahkan komunikasi dengan guru</strong> → Misalnya lewat pengumuman, grup kelas, atau mading sekolah, sehingga siswa tidak bingung.</li>
+                    <li><strong>Meningkatkan partisipasi</strong> → Kalau ada informasi yang jelas, siswa bisa ikut aktif dalam kegiatan sekolah (ekstrakurikuler, organisasi, dll).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>APA JADINYA JIKA INFORMASI SEKOLAH TIDAK TERSOSIALISASI DENGAN BAIK</h2>
+                <p>Jika informasi sekolah tidak tersosialisasi dengan baik maka:</p>
+                <ul>
+                    <li><strong>Banyak yang ketinggalan info</strong> → siswa tidak tahu jadwal ujian, piket, atau kegiatan penting.</li>
+                    <li><strong>Bikin bingung</strong> → tidak jelas aturan atau apa yang harus dilakukan.</li>
+                    <li><strong>Kurang semangat ikut kegiatan</strong> → karena tidak ada informasi yang jelas, siswa jadi malas atau tidak ikut.</li>
+                    <li><strong>Bisa salah paham</strong> → misalnya jadwal berbeda-beda infonya, jadi siswa salah masuk kelas atau terlambat.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>KESIMPULAN</h2>
+                <p>Kalau informasi sekolah tidak disampaikan dengan baik, siswa jadi bingung, banyak yang ketinggalan jadwal, dan kegiatan sekolah tidak berjalan lancar.</p>
+            </section>
+
+            <a href="index.html" class="button">Kembali ke Halaman Utama</a>
+        </main>
+    </div>
+</body>
+
 </html>
