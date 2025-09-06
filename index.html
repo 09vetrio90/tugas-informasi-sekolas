@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HALO TEMAN TEMAN</h1>
+        <p>Silakan login GMAIL kalian atau daftar sekarang</p>
+
+        <div class="form-container">
+            <div class="login-form">
+                <h2>Masuk</h2>
+                <form id="loginForm">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required>
+
+                    <label for="loginPassword">Kata sandi:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+
+                    <button type="submit">Masuk</button>
+                </form>
+                <p>apabila belum punya akun, silakan <a href="#register">Daftar</a></p>
+            </div>
+
+            <div class="register-form" id="register">
+                <h2>Daftar</h2>
+                <form id="registerForm">
+                    <label for="registerName">Nama:</label>
+                    <input type="text" id="registerName" name="registerName" required>
+
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" name="registerEmail" required>
+
+                    <label for="registerPassword">Kata sandi:</label>
+                    <input type="password" id="registerPassword" name="registerPassword" required>
+
+                    <button type="submit">Buat Akun</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
